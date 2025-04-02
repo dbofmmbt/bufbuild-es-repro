@@ -26,6 +26,9 @@ function test() {
             tags: ["test", "example"],
         };
         const response = yield exports.client.getTestMessage(request);
+        // can't access any of TestMessage properties
+        // response.id
+        // response.content
         console.log(typeof response);
         response.console.log(response);
     });
