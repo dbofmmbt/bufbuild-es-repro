@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package test;
+
+message TestMessage {
+  string id = 1;
+  string content = 2;
+  int32 timestamp = 3;
+  repeated string tags = 4;
+}
+
+service TestService {
+  rpc GetTestMessage (TestMessage) returns (TestMessage) {}
+} 
