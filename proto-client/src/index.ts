@@ -18,11 +18,13 @@ async function test() {
 
   // can't access any of TestMessage properties
 
-  // response.id
+  response.content
+
+  response.id
   // response.content
 
   console.log(typeof response);
-  response.console.log(response);
+  console.log(response);
 }
 
 test();

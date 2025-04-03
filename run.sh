@@ -1,5 +1,5 @@
 cd proto-lib
-pnpm run build
+pnpm run generate
 
 cd ../proto-client
 pnpm run build
